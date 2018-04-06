@@ -11,10 +11,9 @@
   </head>
   <body>
     <header>
-      <div class="container">
         <div id="branding">
          <h1><span class="highlight">IMG</span>Kuben</h1>
-       </div>
+        </div>
        <nav>
          <li class="current"><a href="index.html">Home</a></li>
          <li><a href="galleri.php">Galleri</a></li>
