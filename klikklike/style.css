@@ -44,12 +44,10 @@ header nav{
 
 header .highlight, header .current a{
   color: #809fff;
-  font-weight: bold;
 }
 
 header a:hover{
   color: #cccccc;
-  font-weight: bold;
 }
 
 .mainc {
@@ -63,4 +61,23 @@ header a:hover{
 
 .mainb {
   margin: 25px;
+}
+
+.likeinter img {
+  width: 100%;
+  height: 200px;
+  /*border: grey 4px solid;*/
+}
+
+.likeinter {
+  margin-top: 40px;
+  width: 20%;
+  height: 200px;
+  margin-left: 10%;
+  float: left;
+}
+
+.likeinter p {
+  margin-left: 70px;
+  margin-top: -19px;
 }

@@ -24,6 +24,13 @@
     </header>
     <div class="mainc">
 
+      <!--Bruker dette som foreløbig lagring av "lastopp"-->
+      <form action="includes/addpicture.inc.php" method="POST">
+        <input type="text" name="img_url" placeholder="img_url">
+        <br>
+        <button type="submit" name="submit">Upload picture</button>
+      </form>
+
     </div>
   </body>
 </html>

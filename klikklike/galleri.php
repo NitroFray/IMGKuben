@@ -24,6 +24,22 @@
     </header>
     <div class="mainc">
 
+      <?php
+        $sql = "SELECT * FROM images";
+        $result = mysqli_query($conn, $sql);
+        $resultCheck = mysqli_num_rows($result);
+
+        if ($resultCheck > -1) {
+          while ($row = mysqli_fetch_assoc($result)){
+            echo "<div class='likeinter'><img src='" . $row['img_url'] . "'>";
+            echo "<form action='includes/likes_update.inc.php' method='POST'>";
+            echo "<center><button type='submit' name='like_number' value='" . $row['id'] . "'>Like</button></center>";
+            echo "</form>";
+            echo "<center><p>" . $row['like_number'] . "</p></center></div>";
+          }
+        }
+      ?>
+
     </div>
   </body>
 </html>
