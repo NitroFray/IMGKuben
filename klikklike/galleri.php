@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Besvarelse til prøve">
-    <meta name="keywords" content="web design, education, thw winter olympics">
+    <meta name="keywords" content="web design, education, IMGKuben">
     <meta name="author" content="Teodor S. Selfors">
     <title>IMGKuben | Galleri</title>
     <link rel="stylesheet" href="./style.css">
@@ -25,7 +25,7 @@
     <div class="mainc">
 
       <?php
-        $sql = "SELECT * FROM images";
+        $sql = "SELECT * FROM images;";
         $result = mysqli_query($conn, $sql);
         $resultCheck = mysqli_num_rows($result);
 

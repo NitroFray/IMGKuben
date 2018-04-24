@@ -1,3 +1,106 @@
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
 body{
   font: 15px/1.5 Arial, Helvetica, sans-serif;
   padding: 0;
@@ -18,13 +121,14 @@ header a{
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 16px
+  font-size: 20px;
+  font-weight: 300;
 }
 
 header li{
   float: left;
   display: inline;
-  padding: 0 20px 0 20px;
+  padding: 0 15px 0 15px;
 }
 
 header #branding{
@@ -34,7 +138,7 @@ header #branding{
 header #branding h1{
   margin: 0;
   margin-left: 18px;
-  margin-bottom: 1px;
+  font-size: 50px;
 }
 
 header nav{
@@ -48,10 +152,6 @@ header .highlight, header .current a{
 
 header a:hover{
   color: #cccccc;
-}
-
-.mainc {
-  margin-left: 28%;
 }
 
 .maina {
@@ -80,4 +180,21 @@ header a:hover{
 .likeinter p {
   margin-left: 70px;
   margin-top: -19px;
+}
+
+  /* Index */
+
+#intro {
+  text-align: center;
+  width: 100%;
+  font-size: 40px;
+  padding-top: 5px;
+}
+
+#introtekst {
+  font-size: 16px;
+  text-align: center;
+  margin-left: 30%;
+  margin-right: 30%;
+  padding-top: 5px;
 }

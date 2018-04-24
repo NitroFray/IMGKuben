@@ -21,12 +21,14 @@
          <li><a href="logginn.php">Logg Inn</a></li>
        <nav>
     </header>
-    <div class="mainc">
       <div class="hei">
-        <p>hei</p>
+        <h1 id="intro">Velkommen til IMGKuben!</h1>
       </div>
 
-      <img src="heihopp" alt="">
+      <p id="introtekst">Denne nettsiden ble laget som et prosjekt for IT1. Nettsiden er designet for å kunne laste opp bilder og dele de i ethis
+      rydding format. Siden ble designet igjennom html, css og php koding. PhpMyAdmin ble tatt i bruk for å styre og drifte databasene og satt
+      opp med hjelp av sql-kode.</p>
+
     </div>
   </body>
 </html>
