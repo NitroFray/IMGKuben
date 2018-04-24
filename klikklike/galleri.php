@@ -1,3 +1,7 @@
+<?php
+  include_once 'includes/dbh.inc.php';
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -25,7 +29,7 @@
     <div class="mainc">
 
       <?php
-        $sql = "SELECT * FROM images";
+        $sql = "SELECT * FROM images;";
         $result = mysqli_query($conn, $sql);
         $resultCheck = mysqli_num_rows($result);
 
