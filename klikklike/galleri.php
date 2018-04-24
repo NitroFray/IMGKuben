@@ -19,7 +19,7 @@
          <li><a href="index.php">Home</a></li>
          <li class="current"><a href="galleri.php">Galleri</a></li>
          <li><a href="statistikk.php">Statistikk</a></li>
-         <li><a href="index3.php">Logg Inn</a></li>
+         <li><a href="logginn.php">Logg Inn</a></li>
        <nav>
     </header>
     <div class="mainc">

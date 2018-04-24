@@ -15,10 +15,10 @@
          <h1><span class="highlight">IMG</span>Kuben</h1>
         </div>
        <nav>
-         <li class="current"><a href="index.html">Home</a></li>
+         <li class="current"><a href="index.php">Home</a></li>
          <li><a href="galleri.php">Galleri</a></li>
          <li><a href="statistikk.php">Statistikk</a></li>
-         <li><a href="index3.php">Logg Inn</a></li>
+         <li><a href="logginn.php">Logg Inn</a></li>
        <nav>
     </header>
     <div class="mainc">
