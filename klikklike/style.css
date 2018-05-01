@@ -163,25 +163,6 @@ header a:hover{
   margin: 25px;
 }
 
-.likeinter img {
-  width: 100%;
-  height: 200px;
-  /*border: grey 4px solid;*/
-}
-
-.likeinter {
-  margin-top: 40px;
-  width: 20%;
-  height: 200px;
-  margin-left: 10%;
-  float: left;
-}
-
-.likeinter p {
-  margin-left: 70px;
-  margin-top: -19px;
-}
-
   /* Index */
 
 #intro {
@@ -197,4 +178,141 @@ header a:hover{
   margin-left: 30%;
   margin-right: 30%;
   padding-top: 5px;
+}
+
+.main-container {
+  padding-top: 30px;
+}
+
+.main-wrapper {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.main-wrapper h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+.signup_form {
+  width: 400px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.signup_form input {
+  width: 90%;
+  height: 40px;
+  padding: 0px 5%;
+  margin-bottom: 4px;
+  border: none;
+  background-color: #ccc;
+  font-family: arial;
+  font-size: 16px;
+  color: #111;
+  line-height: 40px;
+  margin-bottom: 10px;
+}
+
+.signup_form button {
+  display: block;
+  margin: 0 auto;
+  width: 30%;
+  height: 40px;
+  border: none;
+  background-color: #35424a;
+  font-family: arial;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.signup_form p {
+  text-align: center;
+  font-size: 110%;
+}
+
+.signup_form button:hover {
+  background-color: #111;
+}
+
+/* PICTURE UPLOAD */
+
+.upload-form {
+  margin: 0 auto;
+  width: 400px;
+}
+
+label.myLabel input[type="file"] {
+  position:absolute;
+  top: -1000px;
+}
+
+/***** Example custom styling *****/
+.myLabel {
+  text-align: center;
+  border: 1px solid #AAA;
+  border-radius: 4px;
+  padding: 4px 10px;
+  margin: 2px;
+  background: white;
+  display: inline-block;
+  font-size: 20px;
+  cursor: pointer;
+  width: 100%;
+}
+.myLabel:hover {
+  background: #CCC;
+}
+.myLabel:active {
+  background: #CCF;
+}
+.myLabel :invalid + span {
+  color: black;
+}
+.myLabel :valid + span {
+  color: #4A4;
+}
+
+/* GALLERI.php */
+
+.picturearea {
+  margin: 0 auto;
+  width: 600px;
+}
+
+.picture-interface {
+  margin: 0 auto;
+  height: 350px;
+  width: 380px;
+  padding: 10px;
+  background-color: #ccc;
+  margin-bottom: 30px;
+}
+
+.picture-interface img {
+  width: 100%;
+  height: 300px;
+}
+
+th, td {
+  border: 1px black solid;
+  padding: 1px;
+}
+
+.picturename {
+  float: right;
+  margin-top: -50px;
+}
+
+.picture-likes-table {
+  margin: 0 auto;
+}
+
+.table-header {
+  background-color: #809fff;
+}
+
+.table-body {
+  background-color: lightblue;
 }

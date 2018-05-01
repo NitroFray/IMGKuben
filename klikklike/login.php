@@ -1,3 +1,7 @@
+<?php
+include_once 'includes/dbh.inc.php';
+?>
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -23,7 +27,16 @@
        <nav>
     </header>
     <div class="mainc">
-
+      <section class="main-container">
+        <div class="main-wrapper">
+          <h2>Login</h2>
+          <form class="signup_form" action="includes/login.inc.php" method="POST">
+            <input type="text" name="user-name" placeholder="Peter">
+            <input type="password" name="pass-word" placeholder="test123">
+            <button type="submit" name="submit">Login</button>
+          </form>
+        </div>
+      </section>
     </div>
   </body>
 </html>

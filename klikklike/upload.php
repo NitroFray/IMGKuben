@@ -22,27 +22,31 @@
        <nav>
          <?php
          if (isset($_SESSION['u_uid'])) {
-           echo '<li class="current"><a href="index.php">Home</a></li>
+           echo '<li><a href="index.php">Home</a></li>
                  <li><a href="galleri.php">Galleri</a></li>
                  <li><a href="statistikk.php">Statistikk</a></li>
-                 <li><a href="upload.php">Upload picture</a></li>
+                 <li class="current"><a href="upload.php">Upload picture</a></li>
                  <li><a href="includes/logout.inc.php">Logout</a></li>';
          } else {
-           echo '<li class="current"><a href="index.php">Home</a></li>
-                 <li><a href="galleri.php">Galleri</a></li>
-                 <li><a href="statistikk.php">Statistikk</a></li>
-                 <li><a href="login.php">Logg Inn</a></li>';
+           echo '<meta http-equiv="refresh" content="0;url=index.php">';
          }
          ?>
        <nav>
     </header>
-      <div class="hei">
-        <h1 id="intro">Velkommen til IMGKuben!</h1>
-      </div>
-      
-      <p id="introtekst">Denne nettsiden ble laget som et prosjekt for IT1. Nettsiden er designet for å kunne laste opp bilder og dele de i ethis
-      rydding format. Siden ble designet igjennom html, css og php koding. PhpMyAdmin ble tatt i bruk for å styre og drifte databasene og satt
-      opp med hjelp av sql-kode.</p>
+
+      <section class="main-container">
+        <?php
+
+        echo '<div class="upload-form"><form action="includes/profile_upload.inc.php" method="POST" enctype="multipart/form-data">
+                <label class="myLabel">
+                  <input type="file" name="file" required/>
+                  <span>Select picture</span>
+                </label>
+                <br>
+                <center><button type="submit" name="submit">UPLOAD</button></center>
+              </form></div>';
+        ?>
+      </section>
 
     </div>
   </body>

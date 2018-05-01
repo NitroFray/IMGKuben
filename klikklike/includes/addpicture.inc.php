@@ -1,4 +1,5 @@
 <?php
+  session_start();
   include_once 'dbh.inc.php';
 
   $img_url = mysqli_real_escape_string($conn, $_POST['img_url']);
@@ -7,4 +8,4 @@
     values ('$img_url', '0');";
   mysqli_query($conn, $sql);
 
-  header("Location: ../galleri.php?upload=success");
+  echo '<meta http-equiv="refresh" content="0;url=../galleri.php?upload=success">';
