@@ -62,12 +62,13 @@
           $myfile = fopen($image2, "r") or die("Unable to open file!");
           $likenumber = fread($myfile,filesize($image2));
           fclose($myfile);
-          $fileext = explode('/', $image2);
-          $fileactualext1 = $fileext[0];
-          $fileactualext2 = $fileext[1];
-          $fileext2 = explode('.', $fileactualext2);
-          $imglocation = $fileext2[0].'.'.$fileext2[1];
-          echo '<div class="picture-interface"><img src="uploads/'.$imglocation.'" /><div class="interface-bottomline"><form action="includes/like_update.inc.php" method="POST"><button type="submit" name="submit" value="'.$image2.'">LIKE</button></form><p>'.$likenumber.'</p><p class="picturename">'.$fileactualext2.'</p></div></div>';
+
+          foreach($images as $image) {
+            $fileext = explode('/', $images[0]);
+            $fileactualext1 = $fileext[0];
+            $fileactualext2 = $fileext[1];
+            echo '<div class="picture-interface"><img src="'.$image.'" /><div class="interface-bottomline"><form action="includes/like_update.inc.php" method="POST"><button type="submit" name="submit" value="'.$image2.'">LIKE</button></form><p>'.$likenumber.'</p><p class="picturename">'.$fileactualext2.'</p></div></div>';
+          }
         }
 
       ?>
